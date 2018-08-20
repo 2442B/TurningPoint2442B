@@ -31,7 +31,7 @@ int baseLiftPositions[12] = {3980,3980,3750,3700,3500,3350,3100,3400,3300,3250,2
 
 /*base
 back = 3980
-highest = 2423
+highest = 2423 
 
 topLift:
 back = 355
