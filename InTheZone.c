@@ -25,7 +25,7 @@
 #pragma competitionControl(Competition)
 
 #include "Vex_Competition_Includes.c"
-#include "\InTheZoneLibrary.c"
+#include "\TurningPointLibrary.c"
 
 void pre_auton()
 {
@@ -47,9 +47,9 @@ void runBasicCompAuton(string majorSide, int minorSide, int zone)
 {
 	//minorSide: 1 = left, -1 = right, majorSide parameter not used yet
 	clearTimer(T1);
-	reachedMobileGoal = false; //will act as hard stop for lifting cone â?? when reachedMobileGoal is true, the lift will immediately drop
+	reachedMobileGoal = false; //will act as hard stop for lifting cone Ã¢?? when reachedMobileGoal is true, the lift will immediately drop
 
-	//Go to mobile goal â Drop mobile base lift, lift cone, and drive straight
+	//Go to mobile goal Ã¢ Drop mobile base lift, lift cone, and drive straight
 	setForkliftPower(0);
 	setTopLiftPos(BACK_TOP,7,-15);
 	driveStraight(1600,127); //drive to mobile goal
@@ -92,7 +92,7 @@ void runBasicCompAuton(string majorSide, int minorSide, int zone)
 	//Score cone and back away
 	setClawPower(127);
 	//moved earlier
-	setBaseLiftPos(3850, 7); //lift up cone â?? possibly change this to not go back all the way (potentially wasting time in driver control)
+	setBaseLiftPos(3850, 7); //lift up cone Ã¢?? possibly change this to not go back all the way (potentially wasting time in driver control)
 	setForkliftPower(0);
 	wait1Msec(500);
 	setClawPower(0);
