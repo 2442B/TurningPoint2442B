@@ -29,7 +29,7 @@
 
 void pre_auton()
 {
-	SensorValue[redLED] = 1;
+	SensorValue[redLED] = 1; 
 	writeDebugStreamLine("begin gyro init");
 	SensorType[in4] = sensorNone;
 	wait1Msec(1000);
